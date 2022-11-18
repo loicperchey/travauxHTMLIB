@@ -10,50 +10,77 @@
 
 
 .imagecss{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width : 50%;
+}
 
+.reglageImage
+{   height: 100%;
     width : 100%;
-    height: 100%;
 }
 
 .box2
 {
     display: flex;
     flex-direction: column;
-        column-rule: 1px solid rgb(75, 70, 74);
-        text-align: center;
-        background-color: beige;
-        width: 50%;
-        height: auto;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 15px;
+    column-rule: 1px solid rgb(75, 70, 74);
+    text-align: center;
+    background-color: beige;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
 .titleh1body1
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size : 14px;
+    height: 10%;
+    width : 100%;
 }
 
 .titleh1body2
 {
-    margin-bottom :5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width : 100%;
     border-bottom: 1px solid black;
 
 }
+.textAFormater{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width : 50%;
+}
 
-.texte{
-    margin-top: 55px;
-    margin-bottom: 55px;
+.spanBoutonAFormater{
+    height: 20%;
+    width : 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ebutton{
-
+    height: 20%;
+    width : 50%;
+    
 }
 
 @media screen and (max-width: 1050px) {
     .bodyclass {
-        display: flex;
         flex-direction :column;
     }
 }

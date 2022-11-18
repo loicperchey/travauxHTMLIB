@@ -49,6 +49,13 @@ align-items: center;
 width : 50%;
 }
 
+.textAFormater{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 40%;
+}
+
 .box2-1
 {   display: flex;
     background-color: black;
