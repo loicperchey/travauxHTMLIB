@@ -62,6 +62,7 @@ width : 50%;
     width : 50%; 
     justify-content : space-around;
     flex-direction: column;
+    padding-top : 15px
 }
 
 form{
@@ -75,6 +76,8 @@ form{
 
 .pform{
     color: white;
+    margin-bottom: 5px;
+    align-items: center;
 }
 
 .lebouton{
