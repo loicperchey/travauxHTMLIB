@@ -68,7 +68,7 @@ class Spell{
         caster.setStamina(caster.getStamina()-this.staminacost);
         target.subirDommage(this.damage);
         console.log(`Le sort ${this.nom} inflige :\nbdegats : ${this.damage}\ncaster : ${this.caster}\nstaminacoast: ${this.target}`);
-        setTimeout(()=>this.castcallback(spell), 500);
+        setTimeout(()=>this.castcallback(caster, target), 500);
     }
 }
 
