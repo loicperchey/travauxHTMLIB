@@ -13,18 +13,18 @@ class Personnage{
     }
 
     getHp() {
-        console.log(this.hp);
+        return this.hp;
         }
 
     getStamina() {
-        console.log(this.hp);
+        return this.hp;
         }
 
-    set stamina(endurance) {
+    setStamina(endurance) {
         this.stamina=endurance;
           }
     
-    set hp(hp) {
+    setHp(hp) {
         this.hp=hp;
               }
         
@@ -44,5 +44,5 @@ class Personnage{
     }
 }
 
-let personnage = new Personnage("Conan", 100, 10, 25, chèvre, ["Coup violent", "Attaque du légionnaire", "This is Méchoui"]);
+let personnage = new Personnage("Conan", 100, 10, 25, ["chèvre", "mouton"], ["Coup violent", "Attaque du légionnaire", "This is Méchoui"]);
 
