@@ -1,13 +1,14 @@
 
 
 class Personnage{
-    constructor(nom, hp, strength, endurance, opponent, attaques){
+    opponent=null;
+    attaques=["Coup violent", "Attaque du légionnaire", "This is Méchoui"];
+
+    constructor(nom, hp, strength, endurance){
         this.nom=nom;
         this.hp=hp;
         this.strength=strength;
         this.endurance=endurance;
-        this.opponent=opponent;
-        this.attaques=attaques;
     }
 
     getHp() {
@@ -24,9 +25,8 @@ class Personnage{
     
     setHp(hp) {
         this.hp=hp;
-              }
+        }
         
-
     subirDommage(montant_dommage){
         return this.montant_dommage=strength-endurance;
     }
@@ -35,12 +35,15 @@ class Personnage{
         this.target=hp-subirDommage();
         this.endurance = -2;
     }
-
+    afficherAttaques(){
+        console.log(this.attaques);
+    }
 
     annonce(){
-        return console.log(`Je m'appelle ${this.nom}, mes stats sont :\nhp : ${this.hp}\nstrength : ${this.strength}\nendurance: ${this.endurance}`);
+        return console.log(`Je m'appelle ${this.nom}, mes stats sont :\nhp : ${this.hp}\nstrength : ${this.strength}\nendurance: ${this.endurance} \mesattaques: ${this.attaques}`);
     }
 }
 
-let personnage = new Personnage("Conan", 100, 10, 25, ["chèvre", "mouton"], ["Coup violent", "Attaque du légionnaire", "This is Méchoui"]);
+let personnage = new Personnage("Conan", 100, 10, 25);
+personnage.annonce();
 
