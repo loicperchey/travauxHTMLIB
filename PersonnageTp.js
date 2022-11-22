@@ -8,8 +8,6 @@ class Personnage{
         this.endurance=endurance;
         this.opponent=opponent;
         this.attaques=attaques;
-
-
     }
 
     getHp() {
@@ -21,7 +19,7 @@ class Personnage{
         }
 
     setStamina(endurance) {
-        this.stamina=endurance;
+        this.endurance=endurance;
           }
     
     setHp(hp) {
