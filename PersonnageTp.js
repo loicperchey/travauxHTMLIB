@@ -28,22 +28,25 @@ class Personnage{
         }
         
     subirDommage(montant_dommage){
-        return this.montant_dommage=strength-endurance;
+        this.hp-=montant_dommage;
     }
    
     attaquer(target){
-        this.target=hp-subirDommage();
-        this.endurance = -2;
+        target.subirDommage(this.strength);
+        this.endurance -=2;
     }
-    afficherAttaques(){
-        console.log(this.attaques);
+   
+    annonce(){
+        console.log(`Je m'appelle ${this.nom}, mes stats sont :\nhp : ${this.hp}\nstrength : ${this.strength}\nendurance: ${this.endurance} \mesattaques: ${this.attaques}`);
     }
 
-    annonce(){
-        return console.log(`Je m'appelle ${this.nom}, mes stats sont :\nhp : ${this.hp}\nstrength : ${this.strength}\nendurance: ${this.endurance} \mesattaques: ${this.attaques}`);
+    ajouterAttaque(valeurAPousser){
+        this.attaques.push(valeurAPousser);
     }
 }
 
 let personnage = new Personnage("Conan", 100, 10, 25);
+personnage.annonce();
+personnage.ajouterAttaque("Curé de Camaret");
 personnage.annonce();
 
